@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+
+        /*com o WINDOW.PROMPT os valores automáticamente são
+        lidos como STRING, por isso se não ouver conversão de String para Number ao inves de somar os valores eles serão apenas mostrados juntos*/
+        var n1 = Number.parseInt(window.prompt('Digite um número:'))
+        //convertendo os valores para Int(Number)
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var n3 = Number.parseFloat(window.prompt('Digite outro com casa decimal:'))
+        var s = n1 + n2 + n3
+
+        window.alert('A soma dos valores é ' + String(s)) //Concatenação + transformando Numero em String ou variavel.toString()
+
+        /*window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}´)*/ /*-outra forma de mostrar o conteudo*/ 
+
+        //(number + number) para adição
+        //(string + string) para concatenação
+
+
+    </script>
+
+</body>
+</html>
